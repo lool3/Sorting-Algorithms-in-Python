@@ -2,13 +2,13 @@
 A demonstration of various sorting algorithms in python
 
 TODO:
-* Main - [x]
-* Bubble Search - [x]
-* Selection Search - [ ]
-* Insertion Search - [x]
-* Quick Search - [ ]
-* Merge Search - [ ]
-* Counting Search - [ ]
-* Radix Search - [ ]
-* Bucket Search - [ ]
-* Comb Search - [ ]
+- [x] Main
+- [x] Bubble Search
+- [ ] Selection Search
+- [x] Insertion Search
+- [ ] Quick Search
+- [ ] Merge Search 
+- [ ] Counting Search
+- [ ] Radix Search
+- [ ] Bucket Search
+- [ ] Comb Search
