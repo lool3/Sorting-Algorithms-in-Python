@@ -1,7 +1,7 @@
 # A bunch a munch a crunch of sorting algorythms
 A demonstration of various sorting algorithms in python
 
-TODO:
+### TODO:
 - [x] Main
 - [x] Bubble Search
 - [ ] Selection Search
