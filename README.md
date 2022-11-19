@@ -4,7 +4,7 @@ A demonstration of various sorting algorithms in python
 ### TODO:
 - [x] Main
 - [x] Bubble Sort
-- [ ] Selection Sort
+- [X] Selection Sort
 - [x] Insertion Sort
 - [ ] Quick Sort
 - [ ] Merge Sort 
