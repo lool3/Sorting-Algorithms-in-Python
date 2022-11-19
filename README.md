@@ -12,3 +12,4 @@ A demonstration of various sorting algorithms in python
 - [ ] Radix Sort
 - [ ] Bucket Sort
 - [ ] Comb Sort
+- [ ] Add benchmark mode to test each algorithm and display time taken
