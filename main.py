@@ -37,7 +37,7 @@ def choose():
   while True:
     try:
       choice = int(input("Pick a sorting algorithm: "))
-      if choice < 0 or choice > len(algorithms):
+      if choice < 0 or choice > len(algorithms) - 1:
         raise ValueError("Invalid choice")
       else:
         return choice
