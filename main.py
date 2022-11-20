@@ -1,13 +1,17 @@
 import sortmylist
-import random
+import random, time
+
+
 def main():
   print(
     "This program will sort a random list of integers from smallest to largest"
   )
   algorithm = choose()
+
   randomList = []  #Create array of random integers to sort
   for i in range(100):
     randomList.append(random.randrange(0, 1000))
+  start = time.time()
   if algorithm == 0:
     print(sortmylist.bubble(randomList))
   elif algorithm == 1:
@@ -26,11 +30,15 @@ def main():
     print(sortmylist.bucket(randomList))
   elif algorithm == 8:
     print(sortmylist.comb(randomList))
+  print(f'Time taken in seconds: {time.time() - start}')
+
+
 def choose():
   algorithms = ("BUBBLE", "SELECTION", "INSERTION", "QUICK", "MERGE",
                 "COUNTING", "RADIX", "BUCKET", "COMB")
   for i, item in enumerate(algorithms):
     print(f"{i}. {item}")
+
   while True:
     try:
       choice = int(input("Pick a sorting algorithm: "))
@@ -41,5 +49,7 @@ def choose():
     except ValueError as err:
       print(f"Error: {err}. Try again...")
       continue
+
+
 if __name__ == "__main__":
   main()
