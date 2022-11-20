@@ -6,30 +6,25 @@ def main():
   print(
     "This program will sort a random list of integers from smallest to largest"
   )
-  algorithm = choose()
-
   randomList = []  #Create array of random integers to sort
   for i in range(100):
     randomList.append(random.randrange(0, 1000))
+    
+  algorithms = {
+    0:sortmylist.bubble(randomList),
+    1:sortmylist.selection(randomList),
+    2:sortmylist.insertion(randomList),
+    3:sortmylist.quick(randomList),
+    4:sortmylist.merge(randomList),
+    5:sortmylist.counting(randomList),
+    6:sortmylist.radix(randomList),
+    7:sortmylist.bucket(randomList),
+    8:sortmylist.comb(randomList)
+  }
+  algorithm = choose()
+  
   start = time.time()
-  if algorithm == 0:
-    print(sortmylist.bubble(randomList))
-  elif algorithm == 1:
-    print(sortmylist.selection(randomList))
-  elif algorithm == 2:
-    print(sortmylist.insertion(randomList))
-  elif algorithm == 3:
-    print(sortmylist.quick(randomList))
-  elif algorithm == 4:
-    print(sortmylist.merge(randomList))
-  elif algorithm == 5:
-    print(sortmylist.counting(randomList))
-  elif algorithm == 6:
-    print(sortmylist.radix(randomList))
-  elif algorithm == 7:
-    print(sortmylist.bucket(randomList))
-  elif algorithm == 8:
-    print(sortmylist.comb(randomList))
+  print(algorithms.get(algorithm))
   print(f'Time taken in seconds: {time.time() - start}')
 
 
