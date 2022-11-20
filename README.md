@@ -1,4 +1,4 @@
-# A bunch a munch a crunch of sorting algorythms
+# A bunch a munch a crunch of sorting algorithms
 A demonstration of various sorting algorithms in python
 
 ### TODO:
