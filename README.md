@@ -12,4 +12,5 @@ A demonstration of various sorting algorithms in python
 - [ ] Radix Sort
 - [ ] Bucket Sort
 - [ ] Comb Sort
-- [ ] Add benchmark mode to test each algorithm automatically
+- [ ] Add benchmark mode to test each algorithm automatically and display fastest algorithm
+- [ ] Allow command line arguments for benchmarking sorting algorithms with given data
