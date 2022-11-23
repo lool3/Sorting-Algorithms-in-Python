@@ -6,9 +6,8 @@ def main():
   print(
     "This program will sort a random list of integers from smallest to largest"
   )
-  randomList = []  #Create array of random integers to sort
-  for i in range(100):
-    randomList.append(random.randrange(0, 1000))
+  randomList = list(range(1000))  #Create array of random integers to sort
+  random.shuffle(randomList) #Shuffles the list
     
   algorithms = {
     0:sortmylist.bubble(randomList),
