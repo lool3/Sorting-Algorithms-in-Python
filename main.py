@@ -19,7 +19,7 @@ def main():
   }
   algorithm = choose()
   start = time.time()
-  print(algorithms.get(algorithm)(randomList))
+  algorithms.get(algorithm)(randomList)
   print(f'Time taken in seconds: {time.time() - start}')
 def choose():
   algorithms = ("BUBBLE", "SELECTION", "INSERTION", "QUICK", "MERGE",
