@@ -9,7 +9,6 @@ def bubble(sortme):
     if swapped == False:  #If entire pass completed with no swaps
       return sortme
 
-
 def selection(sortme):
   length = len(sortme)
   for i in range(length):
@@ -21,7 +20,6 @@ def selection(sortme):
     sortme[i], sortme[minPointer] = sortme[minPointer], sortme[i]
   return sortme
 
-
 def insertion(sortme):
   for i in range(1, len(sortme)):  # For each index excluding [0]
     p = i
@@ -30,32 +28,31 @@ def insertion(sortme):
       p -= 1
   return sortme
 
-
 def quick(sortme):
-
-  return f"I couldn't be bothered to sort the following list: {sortme}"
-
+  if len(sortme) < 1: #No sorting required
+    return sortme
+  else:
+    pivot = sortme.pop()
+    higher = []
+    lower = []
+    for item in sortme:
+      if item > pivot:
+        higher.append(item)
+      else:
+        lower.append(item)
+    return quick(lower) + [pivot] + quick(higher)
 
 def merge(sortme):
-
   return f"I couldn't be bothered to sort the following list: {sortme}"
-
 
 def counting(sortme):
-
   return f"I couldn't be bothered to sort the following list: {sortme}"
-
 
 def radix(sortme):
-
   return f"I couldn't be bothered to sort the following list: {sortme}"
-
 
 def bucket(sortme):
-
   return f"I couldn't be bothered to sort the following list: {sortme}"
 
-
 def comb(sortme):
-
   return f"I couldn't be bothered to sort the following list: {sortme}"
