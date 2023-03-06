@@ -4,9 +4,9 @@ A demonstration of various sorting algorithms in python
 ### TODO:
 - [x] Main
 - [x] Bubble Sort
-- [X] Selection Sort
+- [x] Selection Sort
 - [x] Insertion Sort
-- [ ] Quick Sort
+- [x] Quick Sort
 - [ ] Merge Sort 
 - [ ] Counting Sort
 - [ ] Radix Sort
